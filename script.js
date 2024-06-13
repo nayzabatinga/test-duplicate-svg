@@ -1,5 +1,6 @@
-import mySvg from './mySvg.svg';
-
+const svgString = `
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /></svg>
+`;
 // Cria o botão
 const button = document.createElement('button');
 button.innerText = 'Abrir Modal';
@@ -22,7 +23,7 @@ modal.style.backgroundColor = 'white';
 modal.style.padding = '20px';
 modal.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
 modal.style.zIndex = '1001';
-modal.innerHTML = mySvg;
+modal.innerHTML = svgString;
 document.body.appendChild(modal);
 
 // Função para abrir o modal
