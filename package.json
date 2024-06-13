@@ -1,0 +1,23 @@
+{
+  "name": "testsvg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./"
+  },
+  "parcel-transformer-url-loader": {
+    "limit": 9999
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.12.0"
+  },
+  "devDependencies": {
+    "parcel-transformer-url-loader": "^2.0.0"
+  }
+}
